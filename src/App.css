@@ -1,38 +1,176 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.App{
+  background: aliceblue;
+  width: 100vw;
+}
+.header{
+  width: 96vw;
+  height: 4rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  align-content: center;
+  display: flex;
+  margin: 0.5rem 2vw;
+  margin-bottom: 0px;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.input{
+  max-width: 60rem;
+  width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
   text-align: center;
+  border: 2px solid #000;
+  border-radius: 1.5rem;
+  font-size: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: black;
+  border-radius: 1.5rem;
+  border: 2px solid #0000006c;
+  margin: auto;
+  font-size: 2rem;
+  background: #0000006c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:active {
+  border: 2px solid #000000;
+  background: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resultPage{
+  width: 20rem;
+  min-width: 80vw;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.resultPage .information{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.resultPage .profilePic{
+  display: flex;
+  width: 100%;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.resultPage .profilePic img{
+  max-width: 18rem;
+  width: 80vw;
+  height: width;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.information p{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  width: 100%;
+  align-content: start;
+  padding: auto;
+  flex-direction: column;
+  border: 2px solid black;
+  border-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+.information p:last-child{
+  border-bottom: 2px solid black;
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+}
+
+.information p:first-child{
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+
+.information p span:first-child{
+ width: 20vw;
+ min-width: 10rem;
+}
+
+.information p span:last-child{
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 1100px) { 
+  
+  .information p{
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .information p span:first-child{
+    border-right: 2px solid black;
   }
+  
+}
+
+
+
+.ratingChart{
+  height: 100vh;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 5rem; */
+  border: 2px solid black;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+
+.chartHeading{
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.chart{
+  height: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.invalid{
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.srch{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
